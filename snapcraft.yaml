@@ -1,4 +1,4 @@
-name: kakoune
+name: kakoune-lukewh
 version: 2019.07.01
 summary: Modal editor 
 description: |
@@ -14,8 +14,12 @@ description: |
 
   Join us on freenode IRC #Kakoune
 
+  This snap is built via the build.snapcraft.io service from the
+  snapcraft.yaml definition at https://github.com/lukewh/kakuone-snap to
+  ensure source and build transparency.
+
 base: core18
-confinement: devmode
+confinement: classic
 
 architectures:
   - build-on: amd64
@@ -31,5 +35,5 @@ parts:
     plugin: make
 
 apps:
-  kakoune:
+  kakoune-lukewh:
     command: usr/local/bin/kak
