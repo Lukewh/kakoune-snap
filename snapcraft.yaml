@@ -22,7 +22,7 @@ base: core18
 confinement: classic
 
 architectures:
-  - build-on: amd64
+  - build-on: [amd64, i386, arm64, armhf]
 
 parts:
   kakoune:
