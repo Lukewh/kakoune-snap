@@ -1,4 +1,4 @@
-name: kakoune-lukewh
+name: kakoune
 version: 2019.07.01
 summary: Modal editor 
 description: |
@@ -35,5 +35,5 @@ parts:
     plugin: make
 
 apps:
-  kakoune-lukewh:
+  kakoune:
     command: usr/local/bin/kak
