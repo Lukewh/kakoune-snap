@@ -1,5 +1,5 @@
 name: kakoune
-version: "v2020.01.16"
+version: v2020.01.16
 summary: Modal editor 
 description: |
   Kakoune is a code editor that implements Vi’s "keystrokes as a text editing language" model. As it’s also a modal editor, it is somewhat similar to the Vim editor (after which Kakoune was originally inspired).

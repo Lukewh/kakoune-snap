@@ -8,7 +8,9 @@ if [ -f "current_version" ]; then
     current_version=$(cat current_version)
 fi
 
-latest_version=$(echo "$json" | jq 'if .prerelease == false then .tag_name else null end')
+latest_version=$(echo "$json" | jq -r 'if .prerelease == false then .tag_name else null end')
+
+echo "$latest_version"
 
 if [ "$current_version" != "$latest_version" ]; then
     echo "Update to $latest_version"
