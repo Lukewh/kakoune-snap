@@ -5,7 +5,7 @@ json=$(curl --silent "https://api.github.com/repos/mawww/kakoune/releases/latest
 current_version=""
 
 if [ -f "current_version" ]; then
-    current_version=$(cat "$current_version")
+    current_version=$(cat current_version)
 fi
 
 latest_version=$(echo "$json" | jq 'if .prerelease == false then .tag_name else null end')
