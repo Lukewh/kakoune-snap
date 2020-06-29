@@ -1,5 +1,5 @@
 #!/bin/bash
-
+date
 json=$(curl --silent "https://api.github.com/repos/mawww/kakoune/releases/latest")
 
 current_version=""
