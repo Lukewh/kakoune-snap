@@ -18,6 +18,6 @@ if [ "$current_version" != "$latest_version" ]; then
     git commit -a -m "Update to $latest_version"
     git push origin master
 
-    echo "$current_version" > current_version
+    echo "$latest_version"> current_version
 fi
 
