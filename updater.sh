@@ -31,6 +31,6 @@ if [ "$current_version" != "$latest_version" ]; then
 
     echo "$latest_version"> "current_version"
 
-    curl -d '{"snapName":"kakoune","version":"$latest_version"}' -H "Content-Type: application/json" -X POST "$URL"
+    curl -d '{"snapName":"kakoune","oldVersion":"$current_version","newVersion":"$latest_version"}' -H "Content-Type: application/json" -X POST "$URL"
 fi
 
