@@ -24,7 +24,7 @@ confinement: classic
 parts:
   kakoune:
     source: https://github.com/mawww/kakoune.git
-    source-tag: v$SNAPCRAFT_PROJECT_VERSION
+    source-tag: $SNAPCRAFT_PROJECT_VERSION
     source-subdir: src
     build-packages:
       - libncursesw5-dev
