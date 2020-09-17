@@ -5,7 +5,7 @@ json=$(curl --silent "https://api.github.com/repos/mawww/kakoune/releases/latest
 
 BASE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-if [ -f "$BASE_DIR/.env"]; then
+if [ -f "$BASE_DIR/.env" ]; then
     . "$BASE_DIR/.env"
 fi
 
