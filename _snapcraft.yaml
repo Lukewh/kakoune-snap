@@ -18,7 +18,7 @@ description: |
   snapcraft.yaml definition at https://github.com/lukewh/kakuone-snap to
   ensure source and build transparency.
 
-base: core20
+base: core22
 confinement: classic
 
 parts:
